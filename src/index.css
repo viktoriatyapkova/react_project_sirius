@@ -1,0 +1,98 @@
+:root {
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  --color-text-dark: #4a2c68;
+  --color-bg-dark: #f9f4fc; 
+  --color-text-light: #4a2c68;
+  --color-bg-light: #fefbff; 
+
+  --color-primary: #a084ca;
+  --color-primary-hover: #b39ddb;
+
+  font-family: var(--font-main);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+a:hover {
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-bg-dark);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-bg-dark);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px solid var(--color-primary-hover);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-text-light);
+    background-color: var(--color-bg-light);
+  }
+
+  a {
+    color: #7c5db1;
+  }
+  a:hover {
+    color: #6a4c99;
+  }
+
+  button {
+    background-color: #b39ddb;
+    color: var(--color-text-light);
+  }
+  button:hover {
+    background-color: #9a79c1;
+  }
+}

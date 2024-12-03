@@ -1,0 +1,41 @@
+.MainLayout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 98vw;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: #f9f4fc; 
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.line {
+    width: 100%;
+    border-top: 3px dashed #b39ddb; 
+    margin: 2rem 0;
+    position: relative;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        border-top-color: rgba(179, 157, 219, 0); 
+    }
+    50% {
+        border-top-color: #b39ddb;
+    }
+    100% {
+        border-top-color: rgba(179, 157, 219, 0);
+    }
+}
